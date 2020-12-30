@@ -31,6 +31,7 @@ class RegisterViewController: UIViewController {
         let field = UITextField()
         field.autocapitalizationType = .none
         field.autocorrectionType = .no
+        field.keyboardType = .emailAddress
         field.returnKeyType = .continue
         field.layer.cornerRadius = 12
         field.layer.borderWidth = 1
@@ -186,7 +187,7 @@ class RegisterViewController: UIViewController {
             guard let strongSelf = self else {
                 return
             }
-            guard !exist else {
+            guard exist else {
                 //User already exists
                 strongSelf.alertUserLoginError(messageParam: "User Already Exists")
                 return
