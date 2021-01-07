@@ -15,12 +15,15 @@
 		9964CA13259A6174003DBD5D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9964CA12259A6174003DBD5D /* Assets.xcassets */; };
 		9964CA16259A6174003DBD5D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9964CA14259A6174003DBD5D /* LaunchScreen.storyboard */; };
 		996AE14B259AB2950037E422 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996AE14A259AB2940037E422 /* Extension.swift */; };
+		99911A77259D625800BEF740 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99911A76259D625800BEF740 /* ChatViewController.swift */; };
+		99911A96259D844C00BEF740 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99911A95259D844C00BEF740 /* Storage.swift */; };
 		999C463D259A63C300F56E8C /* LoginViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999C463C259A63C300F56E8C /* LoginViewViewController.swift */; };
 		999C4640259A63D200F56E8C /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999C463F259A63D200F56E8C /* RegisterViewController.swift */; };
 		999C4643259A63F900F56E8C /* PhotoViewerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999C4642259A63F900F56E8C /* PhotoViewerViewController.swift */; };
 		999C4646259A640400F56E8C /* VideoPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999C4645259A640400F56E8C /* VideoPlayerViewController.swift */; };
 		999C4649259A641A00F56E8C /* NewConversationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999C4648259A641A00F56E8C /* NewConversationViewController.swift */; };
 		999C464C259A642800F56E8C /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999C464B259A642800F56E8C /* ProfileViewController.swift */; };
+		99A4812225A4049B003E778C /* ConversationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A4812125A4049A003E778C /* ConversationTableViewCell.swift */; };
 		99C8595E259BB7560016AFEE /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C8595D259BB7560016AFEE /* DatabaseManager.swift */; };
 		A081D820972CB1CC0DFA3D8D /* Pods_Messenger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F67A9049077D42138B1E1328 /* Pods_Messenger.framework */; };
 /* End PBXBuildFile section */
@@ -37,12 +40,15 @@
 		9964CA15259A6174003DBD5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9964CA17259A6174003DBD5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		996AE14A259AB2940037E422 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		99911A76259D625800BEF740 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		99911A95259D844C00BEF740 /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
 		999C463C259A63C300F56E8C /* LoginViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewViewController.swift; sourceTree = "<group>"; };
 		999C463F259A63D200F56E8C /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		999C4642259A63F900F56E8C /* PhotoViewerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewerViewController.swift; sourceTree = "<group>"; };
 		999C4645259A640400F56E8C /* VideoPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerViewController.swift; sourceTree = "<group>"; };
 		999C4648259A641A00F56E8C /* NewConversationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewConversationViewController.swift; sourceTree = "<group>"; };
 		999C464B259A642800F56E8C /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		99A4812125A4049A003E778C /* ConversationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationTableViewCell.swift; sourceTree = "<group>"; };
 		99C8595D259BB7560016AFEE /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
 		D3FBA31636154E3065EF2E7A /* Pods-Messenger.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Messenger.release.xcconfig"; path = "Target Support Files/Pods-Messenger/Pods-Messenger.release.xcconfig"; sourceTree = "<group>"; };
 		F67A9049077D42138B1E1328 /* Pods_Messenger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Messenger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -119,6 +125,7 @@
 				999C4645259A640400F56E8C /* VideoPlayerViewController.swift */,
 				999C4648259A641A00F56E8C /* NewConversationViewController.swift */,
 				999C464B259A642800F56E8C /* ProfileViewController.swift */,
+				99911A76259D625800BEF740 /* ChatViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -127,6 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				999C4637259A62EA00F56E8C /* StoryBoards */,
+				99A4812125A4049A003E778C /* ConversationTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -145,6 +153,7 @@
 				9964CA0B259A6170003DBD5D /* SceneDelegate.swift */,
 				996AE14A259AB2940037E422 /* Extension.swift */,
 				99C8595D259BB7560016AFEE /* DatabaseManager.swift */,
+				99911A95259D844C00BEF740 /* Storage.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -317,7 +326,10 @@
 				9964CA0C259A6170003DBD5D /* SceneDelegate.swift in Sources */,
 				999C464C259A642800F56E8C /* ProfileViewController.swift in Sources */,
 				999C463D259A63C300F56E8C /* LoginViewViewController.swift in Sources */,
+				99A4812225A4049B003E778C /* ConversationTableViewCell.swift in Sources */,
+				99911A77259D625800BEF740 /* ChatViewController.swift in Sources */,
 				999C4643259A63F900F56E8C /* PhotoViewerViewController.swift in Sources */,
+				99911A96259D844C00BEF740 /* Storage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
