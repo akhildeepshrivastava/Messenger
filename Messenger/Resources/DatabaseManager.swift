@@ -328,7 +328,14 @@ extension DataBaseManager {
                     }
                     let media = Media(url: imageURL, image: nil, placeholderImage: placeHiolder, size: CGSize(width: 300, height: 300))
                     kind = .photo(media)
-                } else {
+                } else if type == "video" {
+                    guard let videoUrl  = URL(string: content), let placeHiolder = UIImage(systemName: "play.rectangle.fill") else {
+                        return nil
+                    }
+                    let media = Media(url: videoUrl, image: nil, placeholderImage: placeHiolder, size: CGSize(width: 300, height: 300))
+                    
+                    kind = .video(media)
+                }else {
                     kind = .text(content)
                 }
                 guard let finalKind = kind else {
@@ -381,8 +388,10 @@ extension DataBaseManager {
                 if let targerUrl = media.url?.absoluteString {
                     messgge = targerUrl
                 }
-            case .video(_):
-                break
+            case .video(let media):
+                if let targerUrl = media.url?.absoluteString {
+                    messgge = targerUrl
+                }
             case .location(_):
                 break
             case .emoji(_):

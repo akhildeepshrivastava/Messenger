@@ -77,4 +77,26 @@ final class StorageManager {
             }
         }
     }
+    
+    
+    /// Uploads video that is sent in conversation
+    public func uploadMessageVideo(with fileUrl: URL, fileName: String, completion: @escaping UploadPictureCompletion) {
+        storage.child("message_videos/\(fileName)").putFile(from: fileUrl, metadata: nil) { [weak self] (metaData, error) in
+            guard error == nil else {
+                completion(.failure(.failedToUpload))
+                return
+            }
+            
+            self?.storage.child("message_videos/\(fileName)").downloadURL { (url, error) in
+                guard let url = url, error == nil else {
+                    completion(.failure(.failedTogetDownloadUrl))
+                    return
+                }
+                
+                let urlString = url.absoluteString
+                print(urlString)
+                completion(.success(urlString))
+            }
+        }
+    }
 }

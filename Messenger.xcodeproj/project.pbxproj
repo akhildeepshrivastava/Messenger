@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9916174C25AA3036006E3713 /* NewConversationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9916174B25AA3036006E3713 /* NewConversationCell.swift */; };
 		991ECE62259AF682007AF969 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 991ECE61259AF682007AF969 /* GoogleService-Info.plist */; };
 		9964CA0A259A6170003DBD5D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9964CA09259A6170003DBD5D /* AppDelegate.swift */; };
 		9964CA0C259A6170003DBD5D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9964CA0B259A6170003DBD5D /* SceneDelegate.swift */; };
@@ -30,6 +31,7 @@
 
 /* Begin PBXFileReference section */
 		6684BDA77BF86FBC6A063695 /* Pods-Messenger.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Messenger.debug.xcconfig"; path = "Target Support Files/Pods-Messenger/Pods-Messenger.debug.xcconfig"; sourceTree = "<group>"; };
+		9916174B25AA3036006E3713 /* NewConversationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewConversationCell.swift; sourceTree = "<group>"; };
 		991ECE61259AF682007AF969 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		9964CA06259A6170003DBD5D /* Messenger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Messenger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9964CA09259A6170003DBD5D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -135,6 +137,7 @@
 			children = (
 				999C4637259A62EA00F56E8C /* StoryBoards */,
 				99A4812125A4049A003E778C /* ConversationTableViewCell.swift */,
+				9916174B25AA3036006E3713 /* NewConversationCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -317,6 +320,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9964CA0E259A6170003DBD5D /* ConversationViewController.swift in Sources */,
+				9916174C25AA3036006E3713 /* NewConversationCell.swift in Sources */,
 				99C8595E259BB7560016AFEE /* DatabaseManager.swift in Sources */,
 				999C4640259A63D200F56E8C /* RegisterViewController.swift in Sources */,
 				999C4649259A641A00F56E8C /* NewConversationViewController.swift in Sources */,
