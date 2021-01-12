@@ -90,7 +90,7 @@ class LoginViewViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Log In"
-        view.backgroundColor = .white
+        view.backgroundColor = .systemBackground
         // Do any additional setup after loading the view.
         GIDSignIn.sharedInstance()?.presentingViewController = self
         loginObserver = NotificationCenter.default.addObserver(forName: .didLoginNotification, object: nil, queue: .main) { [weak self] _ in
@@ -186,7 +186,8 @@ class LoginViewViewController: UIViewController {
             let user = result.user
             
             let safeEmail = DataBaseManager.safeEmail(email: email)
-            
+            NotificationCenter.default.post(name: .didLoginNotification, object: nil)
+
             DataBaseManager.shared.getDataFor(path: safeEmail) { (result) in
                 switch result {
                 case .success(let data):
@@ -316,6 +317,7 @@ extension LoginViewViewController: LoginButtonDelegate {
                     print("Error while log in")
                     return
                 }
+                NotificationCenter.default.post(name: .didLoginNotification, object: nil)
                 
                 strongSelf.navigationController?.dismiss(animated: true, completion: nil)
                 
